@@ -1,0 +1,77 @@
+# ================================
+# GHL Connect — Root .gitignore
+# ================================
+
+# ── Node / npm ──────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.pnp
+.pnp.*
+package-lock.json
+
+# ── Environment / Secrets ───────
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# ── Database ────────────────────
+data/ghlconnect.db
+data/ghlconnect.db-shm
+data/ghlconnect.db-wal
+backend/data/ghlconnect.db
+backend/data/ghlconnect.db-shm
+backend/data/ghlconnect.db-wal
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Uploaded Files ──────────────
+data/uploads/*
+!data/uploads/.gitkeep
+
+# ── Next.js / Frontend Build ────
+frontend/.next/
+frontend/out/
+frontend/build/
+*.tsbuildinfo
+next-env.d.ts
+
+# ── Production Build ────────────
+dist/
+build/
+out/
+
+# ── Logs ────────────────────────
+logs/
+*.log
+
+# ── Testing / Coverage ──────────
+coverage/
+.nyc_output/
+
+# ── OS & Editor ─────────────────
+.DS_Store
+Thumbs.db
+*.pem
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Vercel / Deployment ─────────
+.vercel
+
+# ── Misc ────────────────────────
+.cache/
+tmp/
+temp/

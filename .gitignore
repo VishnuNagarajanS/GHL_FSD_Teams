@@ -1,85 +1,77 @@
-# Dependencies
+# ================================
+# GHL Connect — Root .gitignore
+# ================================
+
+# ── Node / npm ──────────────────
 node_modules/
-*/node_modules/
-.pnp
-.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+.pnp
+.pnp.*
+package-lock.json
 
-# Environment variables & secrets
+# ── Environment / Secrets ───────
 .env
 .env.*
-*.env
-*.local
 !.env.example
-!*.env.example
+!.env.sample
 
-# Local databases & storage
+# ── Database ────────────────────
+data/ghlconnect.db
+data/ghlconnect.db-shm
+data/ghlconnect.db-wal
+backend/data/ghlconnect.db
+backend/data/ghlconnect.db-shm
+backend/data/ghlconnect.db-wal
 *.db
-*.db-journal
-*.db-shm
-*.db-wal
 *.sqlite
 *.sqlite3
-data/*.db*
-backend/data/*.db*
 
-# Uploaded media & user files
+# ── Uploaded Files ──────────────
 data/uploads/*
 !data/uploads/.gitkeep
-uploads/*
-!uploads/.gitkeep
 
-# Production & build outputs
-.next/
-*/.next/
-out/
-build/
-dist/
-.turbo/
-.cache/
-
-# TypeScript & compile cache
+# ── Next.js / Frontend Build ────
+frontend/.next/
+frontend/out/
+frontend/build/
 *.tsbuildinfo
 next-env.d.ts
 
-# Logs
+# ── Production Build ────────────
+dist/
+build/
+out/
+
+# ── Logs ────────────────────────
 logs/
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-.pnpm-debug.log*
 
-# Testing & coverage
+# ── Testing / Coverage ──────────
 coverage/
 .nyc_output/
 
-# Deployment & platforms
+# ── OS & Editor ─────────────────
+.DS_Store
+Thumbs.db
+*.pem
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Vercel / Deployment ─────────
 .vercel
 
-# Operating System files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-Thumbs.db:encryptable
-desktop.ini
-
-# IDE & Editor files
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
+# ── Misc ────────────────────────
+.cache/
+tmp/
+temp/

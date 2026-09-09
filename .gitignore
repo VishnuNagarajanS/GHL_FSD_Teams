@@ -1,0 +1,85 @@
+# Dependencies
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Environment variables & secrets
+.env
+.env.*
+*.env
+*.local
+!.env.example
+!*.env.example
+
+# Local databases & storage
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+data/*.db*
+backend/data/*.db*
+
+# Uploaded media & user files
+data/uploads/*
+!data/uploads/.gitkeep
+uploads/*
+!uploads/.gitkeep
+
+# Production & build outputs
+.next/
+*/.next/
+out/
+build/
+dist/
+.turbo/
+.cache/
+
+# TypeScript & compile cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Testing & coverage
+coverage/
+.nyc_output/
+
+# Deployment & platforms
+.vercel
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
+desktop.ini
+
+# IDE & Editor files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
